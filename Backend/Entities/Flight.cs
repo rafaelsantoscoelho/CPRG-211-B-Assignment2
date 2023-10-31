@@ -40,7 +40,10 @@ namespace Traveless.Backend.Entities
             set { _from = value; }
         }
 
-        public bool IsDomestic { get; }
+        public bool IsDomestic
+        {
+            get { return _from == _to; }
+        }
 
         public string Time
         {
@@ -71,13 +74,13 @@ namespace Traveless.Backend.Entities
 
         public Flight(string code, string from, string to, string weekday, string time, int seats, decimal costPerSeat)
         {
-            Code = code;
-            From = from;
-            To = to;
-            Weekday = weekday;
-            Time = time;
-            TotalSeats = seats;
-            CostPerSeat = costPerSeat;
+            this.Code = code;
+            this.From = from;
+            this.To = to;
+            this.Weekday = weekday;
+            this.Time = time;
+            this.TotalSeats = seats;
+            this.CostPerSeat = costPerSeat;
         }
 
         public bool Equals(Flight other)
@@ -92,6 +95,8 @@ namespace Traveless.Backend.Entities
 
             return true;
         }
+
+        // TO-DO
 
         public bool Equals(Object obj) { return false; }
     }
