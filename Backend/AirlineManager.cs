@@ -44,7 +44,7 @@ namespace Traveless.Backend
 
         public void LoadAirlines()
         {
-            string[] lines = File.ReadAllLines(_AIRLINE_FILE);
+            string[] lines = File.ReadAllLines(_AIRLINES_FILE);
 
             foreach (string line in lines)
             {
