@@ -9,6 +9,7 @@ namespace Traveless.Backend.Entities
     internal class Flight
     {
         // Fields
+
         private string _code;
         private string _from;
         private string _to;
@@ -18,7 +19,6 @@ namespace Traveless.Backend.Entities
         private decimal _costPerSeat;
 
         // Properties
-        public string AirlineCode { get; }
 
         public string Code
         {
@@ -31,8 +31,6 @@ namespace Traveless.Backend.Entities
             get { return _costPerSeat; }
             set { _costPerSeat = value; }
         }
-
-        public int FlightNumber { get; }
 
         public string From
         {
