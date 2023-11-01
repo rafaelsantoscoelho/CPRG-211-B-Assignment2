@@ -29,6 +29,12 @@ namespace Traveless.Backend.Entities
 
         // Methods
 
+        public Airport(string code, string name)
+        {
+            Code = code;
+            Name = name;
+        }
+
         public override string ToString()
         {
             return "";
