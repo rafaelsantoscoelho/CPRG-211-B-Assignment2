@@ -28,6 +28,12 @@ namespace Traveless.Backend.Entities
             set { _name = value; }
         }
 
+        public Airline(string code, string name)
+        {
+            Code = code;
+            Name = name;
+        }
+
         public override string ToString()
         {
             return "";
