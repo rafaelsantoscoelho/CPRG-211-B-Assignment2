@@ -13,7 +13,7 @@ namespace Traveless.Backend
         // Fields
 
         private List<Airline> _airlines;
-        private const string _AIRLINE_FILE = "../../../../Backend/Data/airlines.csv";
+        private const string _AIRLINES_FILE = "../../../../Backend/Data/airlines.csv";
 
         // Properties
 
@@ -45,6 +45,7 @@ namespace Traveless.Backend
         public void LoadAirlines()
         {
             string[] lines = File.ReadAllLines(_AIRLINE_FILE);
+
             foreach (string line in lines)
             {
                 string[] parts = line.Split(',');
